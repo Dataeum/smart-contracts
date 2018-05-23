@@ -1,0 +1,32 @@
+{
+  "name": "dataeum-smart-contracts",
+  "version": "1.0.0",
+  "license": "MIT",
+  "author": "Alain Rabahi <alain@dataeum.com>",
+  "dependencies": {
+    "bignumber.js": "^2.0.7",
+    "dotenv": "^5.0.1",
+    "eslint": "^4.19.1",
+    "eslint-config-standard": "^11.0.0",
+    "eslint-plugin-import": "^2.9.0",
+    "eslint-plugin-node": "^6.0.1",
+    "eslint-plugin-promise": "^3.7.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "mocha": "^5.1.1",
+    "solidity-coverage": "^0.5.0",
+    "solium": "^1.1.7",
+    "solmd": "^0.2.3",
+    "truffle": "^4.1.8",
+    "truffle-privatekey-provider": "^0.0.6",
+    "web3-utils": "^1.0.0-beta.34"
+  },
+  "engines": {
+    "node": ">=7.6"
+  },
+  "scripts": {
+    "build": "truffle compile",
+    "docs": "solmd contracts/DataeumCrowdsale.sol --dest docs.md",
+    "test": "truffle test",
+    "test-coverage": "solidity-coverage"
+  }
+}
